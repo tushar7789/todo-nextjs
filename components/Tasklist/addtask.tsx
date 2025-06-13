@@ -1,13 +1,16 @@
 import React from 'react'
-import styleList from './styles';
+import './styles.css';
 
 function Addtask() {
   return (
-    <div style={styleList.addtaskStyle}>
-        <input style={styleList.inputStyle} type="text" id="id" name="name"/>
-        <button type="submit">Add</button>
+    <div className="addTaskStyle">
+        <input className="inputStyle" type="text" id="id" name="name"/>
+        <button style = {{fontSize:"20px"}} type="submit">Add</button>
     </div>
   )
 }
 
 export default Addtask;
+
+// style={styleList.addtaskStyle}
+//  style={styleList.inputStyle}

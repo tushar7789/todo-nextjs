@@ -1,0 +1,43 @@
+.headerStyle {
+  color : "black";
+  width : "100%";
+  height : "15vh";
+  display : "flex";
+  justify-content : "center";
+  align-items : "center";
+  font-size : "2rem";
+  background : "rgba(109, 138, 116, 0.5)";
+}
+
+.footerStyle {
+  color : "black";
+  width: "50%";
+  height : "85vh";
+  display : "flex";
+  flex-direction : "column";
+  justify-content : "center";
+  border-left : "4px dashed black";
+  border-right : "4px dashed black";
+  border-radius : "20px";
+  margin: "auto";
+  padding : "1rem";
+  font-weight : "600";
+}
+
+.div1Style {
+  display : "block";
+  width : "100%";
+  height : "90%";
+  padding-left : "1rem";
+  padding-right : "1rem";
+}
+
+.div2Style {
+  display : "flex";
+  justify-content : "center";
+  align-items : "center";
+  width : "100%";
+  height : "10%";
+  padding-left : "1rem";
+  padding-right : "1rem";
+}

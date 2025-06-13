@@ -1,14 +1,18 @@
 import React from 'react'
 import styleList from "./styles";
 import propInt from '@/interfaces/homepageInterfaces';
+import "./styles.css"
 
 function Listitem(props : propInt) {
   return (
-    <div style={styleList.listitemStyle}>
-        {props.no}. This is sample task.
-        <input type="checkbox"/>
+    <div className="listitemStyle">
+        {props.no}. {props.task}
+        <input type="checkbox" className="checkBoxStyle"/>
     </div>
   )
 }
 
 export default Listitem;
+
+// style={styleList.listitemStyle} 
+// style={styleList.checkBoxStyle} 

@@ -1,12 +1,15 @@
 import React from 'react'
 import styleList from './styles'
+import "./styles.css"
 
 function Header() {
   return (
-    <div style={styleList.headerStyle} className="font-mono">
+    <div className="font-mono headerStyle">
         Welcome to Your Task List, Tushar!
     </div>
   )
 }
 
 export default Header;
+
+// style={styleList.headerStyle}
