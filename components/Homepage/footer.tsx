@@ -1,5 +1,4 @@
 import React from 'react'
-import styleList from "./styles"
 import Listitem from "../Tasklist/listitem"
 import propInt from '@/interfaces/homepageInterfaces'
 import Addtask from '../Tasklist/addtask'
@@ -42,7 +41,3 @@ function Footer() {
 }
 
 export default Footer;
-
-// style={styleList.footerStyle}
-// style={styleList.div1Style} 
-// style={styleList.div2Style} 

@@ -1,34 +1,60 @@
 .listitemStyle {
-    display : "flex";
-    justify-content : "space-between";
-    align-items : "center";
-    width : "100%";
-    height : "2rem";
-    border-bottom : "2px black solid";
-    font-size : "20px";
-    margin-top: "30px";
-    padding-bottom : "20px";
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    width : 100%;
+    height : 1rem;
+    border-bottom : 2px black solid;
+    font-size : 20px;
+    padding: 30px 10px;
+}
+
+.listitemStyle:hover {
+    cursor: pointer;
+    background: rgba(46, 49, 54, 0.2);
 }
 
 .addtaskStyle {
-    width : "100%";
-    display : "flex";
-    justify-content : "space-between";
-    align-items : "center";
+    width : 200%;
+    height: 100%;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
 }
 
 .inputStyle {
-    text-decoration : "none";
-    width : "85%";
-    height : "2rem";
-    background : "rgba(135, 135, 119, 0.2)";
-    outline : "None";
-    color : "white";
-    font-size : "20px";
+    /* display: inline-block; */
+    text-decoration : none;
+    width : 85%;
+    height : 2rem;
+    background : rgba(46, 49, 54, 0.2);
+    border : 1px solid gray;
+    border-radius : 5px;
+    outline : None;
+    color : white;
+    font-size : 20px;
+    padding : 5px 0px;
+}
+
+.inputStyle:hover {
+    cursor: pointer;
 }
 
 .checkBoxStyle {
-    width: "20px";
-    height: "20px";
-    padding-right : "40px";
+    width: 20px;
+    height: 20px;
+    padding-right : 40px;
+}
+
+.buttonStyle {
+    color : white;
+    display: block;
+    font-size: 20px;
+    border-radius: 5px;
+    padding : 1px 15px;
+    background-color: rgba(46, 49, 54);
+}
+
+.buttonStyle:hover {
+    cursor: pointer;
 }

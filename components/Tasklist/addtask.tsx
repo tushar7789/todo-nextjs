@@ -1,16 +1,20 @@
+'use client'
+
 import React from 'react'
 import './styles.css';
 
 function Addtask() {
+  const addTask = () => {
+    var val = document.getElementsByClassName("inputStyle")[0].innerHTML;
+    console.log("even : ", val);
+  }
+
   return (
-    <div className="addTaskStyle">
-        <input className="inputStyle" type="text" id="id" name="name"/>
-        <button style = {{fontSize:"20px"}} type="submit">Add</button>
+    <div className="addtaskStyle">
+        <input className="inputStyle" type="text"/>
+        <div className="buttonStyle" onClick={addTask}>Add</div>
     </div>
   )
 }
 
 export default Addtask;
-
-// style={styleList.addtaskStyle}
-//  style={styleList.inputStyle}

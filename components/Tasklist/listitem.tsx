@@ -1,5 +1,4 @@
 import React from 'react'
-import styleList from "./styles";
 import propInt from '@/interfaces/homepageInterfaces';
 import "./styles.css"
 
@@ -13,6 +12,3 @@ function Listitem(props : propInt) {
 }
 
 export default Listitem;
-
-// style={styleList.listitemStyle} 
-// style={styleList.checkBoxStyle} 

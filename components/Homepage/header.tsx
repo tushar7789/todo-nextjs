@@ -1,5 +1,4 @@
 import React from 'react'
-import styleList from './styles'
 import "./styles.css"
 
 function Header() {
@@ -11,5 +10,3 @@ function Header() {
 }
 
 export default Header;
-
-// style={styleList.headerStyle}
