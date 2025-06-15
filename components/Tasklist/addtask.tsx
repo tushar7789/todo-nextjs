@@ -2,16 +2,18 @@
 
 import React from 'react'
 import './styles.css';
+import { useState } from 'react';
 
 function Addtask() {
+  const [newTask, setNewTask] = useState('');
+
   const addTask = () => {
-    var val = document.getElementsByClassName("inputStyle")[0].innerHTML;
-    console.log("even : ", val);
+    console.log("even : ", newTask);
   }
 
   return (
     <div className="addtaskStyle">
-        <input className="inputStyle" type="text"/>
+        <input className="inputStyle" type="text" onChange={(e) => setNewTask(e.target.value)}/>
         <div className="buttonStyle" onClick={addTask}>Add</div>
     </div>
   )

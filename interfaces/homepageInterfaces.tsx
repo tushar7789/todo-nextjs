@@ -1,6 +1,10 @@
-interface propInt {
+export type propInt = {
     no : number, 
     task : string,
 }
 
-export default propInt;
+export type storeInt = {
+    list : [],
+    addIntoStoreList : () => void;
+    removeFromStoreList : () => void;
+}

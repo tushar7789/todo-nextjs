@@ -3,6 +3,7 @@ import Listitem from "../Tasklist/listitem"
 import propInt from '@/interfaces/homepageInterfaces'
 import Addtask from '../Tasklist/addtask'
 import "./styles.css"
+import myStore from '@/store/myStore'
 
 const taskList = [
   "This the first sample task",
@@ -13,15 +14,13 @@ const taskList = [
 ]
 
 function Footer() {
-  // const prop : propInt = {
-  //   "no" : 1,
-  //   "task" : "This is the first task mfs"
-  // }
+  const {list, addIntoStoreList, removeFromStoreList} = myStore();
 
   return (
     <div className="font-mono footerStyle">
       <div className = "div1Style">
         {
+
           taskList.map((item, index)=>{
             const prop : propInt = {
               "no" : index + 1,
